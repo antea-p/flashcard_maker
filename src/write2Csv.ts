@@ -12,12 +12,11 @@ export async function writeCsv(filename: string, clozes: string[]): Promise<void
     const csv = Papa.unparse(
         clozes.map(cloze => ({ cloze })),
         {
-            delimiter: ';', // Use semicolon as delimiter
+            delimiter: ';',
             header: false, // No header row required
         }
     );
 
-    // Write CSV string to file using Node.js fs module
     try {
         writeFileSync(filename, csv);
         console.log(`CSV file has been written to ${filename}`);
