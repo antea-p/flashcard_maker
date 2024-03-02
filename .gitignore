@@ -1,0 +1,6 @@
+.env
+.env.local
+*.csv
+*.pdf
+node_modules/
+build/

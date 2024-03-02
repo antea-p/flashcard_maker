@@ -1,0 +1,23 @@
+{
+  "name": "flashcard_maker",
+  "version": "1.0.0",
+  "description": "Flashcard maker using OpenAI API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "16.4.5",
+    "openai": "4.27.0",
+    "papaparse": "5.4.1",
+    "pdf-parse": "1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.17",
+    "@types/papaparse": "5.3.14",
+    "@types/pdf-parse": "1.1.4",
+    "typescript": "5.3.3"
+  }
+}
