@@ -2,7 +2,7 @@ import { extractPdfText, splitTextPreservingContext } from "./src/extractPdfText
 import { createClozes } from "./src/prompting";
 import { writeCsv } from "./src/write2Csv";
 
-const filePath = 'RELATIVE_OR_ABSOLUTE_PATH_TO_YOUR_PDF';
+const filePath = '/home/boone/Metropolitan/Treca godina/SE322/SE322-L10.pdf';
 
 async function main() {
     try {
@@ -16,7 +16,7 @@ async function main() {
             allClozes.push(...clozes);
         }
 
-        console.log(await writeCsv('output_se321_l04.csv', allClozes));
+        console.log(await writeCsv('output.csv', allClozes));
     } catch (error) {
         console.error(error);
     }
