@@ -1,6 +1,6 @@
 # Intro 
 
-**Flashcard maker** is a simple TypeScript application which reads a PDF file, and then uses GPT-4 to generate great cloze flashcards. Thanks to use of certain prompting rules, the clozes are placed strategically over the most important fact in the card - at least, most of the time! Meanwhile, it ignores paragraphs discussing historical information, trivia, and similar. These 2 features - smart cloze placement, and omitting irrelevant details - distinguishes the application from existing third-party solutions.
+**Flashcard maker** is a simple TypeScript application which reads a PDF file, and then uses GPT-4 to generate Anki-compatible cloze flashcards (as CSV file). Thanks to use of carefully crafted prompting rules, the clozes are placed over the most important fact in the card - at least, most of the time! Meanwhile, it ignores paragraphs discussing historical information, trivia, and similar. These 2 features - smart cloze placement, and omitting irrelevant details - distinguishes the application from existing third-party solutions.
 
 # Instructions
 1. Clone the project:
@@ -26,3 +26,5 @@ npx ts-node index.ts
 ```typescript
 console.log(await writeCsv('output.csv', allClozes));
 ```
+6. Open Anki, and select any deck you wish. Then, go to File --> Import..., and select your CSV file. In new dialog, change Field separator to Semicolon. Use of [Enhanced Cloze](https://ankiweb.net/shared/info/1990296174) as your Note Type is highly recommended, though optional.
+![image](https://github.com/antea-p/flashcard_maker/assets/147252486/cff21118-36a9-4fbc-aae2-1334da85e8a1)
