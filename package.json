@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@anthropic-ai/sdk": "0.24.3",
     "dotenv": "16.4.5",
     "openai": "4.27.0",
     "papaparse": "5.4.1",
