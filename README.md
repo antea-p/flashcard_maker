@@ -17,7 +17,7 @@ npm install -g ts-node
 npm install
 ```
 5. Create .env file with following contents:
-`OPENAI_ACCESS_KEY=YOUR_OPENAI_TOKEN_GOES_HERE`
+`ANTHROPIC_ACCESS_KEY=YOUR_ANTHROPIC_TOKEN_GOES_HERE`
 6. In index.ts, change the following line:
 ```typescript
 const filePath = `RELATIVE_OR_ABSOLUTE_PATH_TO_YOUR_PDF`;
