@@ -2,7 +2,7 @@ import { extractPdfText, splitTextPreservingContext } from "./src/extractPdfText
 import { createClozes } from "./src/prompting";
 import { writeCsv } from "./src/write2Csv";
 
-const filePath = '/home/boone/Metropolitan/Treca godina/SE311/SE311-L10-pages-2.pdf';
+const filePath = '/your/path/to/pdf';
 
 async function main() {
     try {
@@ -16,10 +16,10 @@ async function main() {
             allClozes.push(...clozes);
 
             // Respect rate limits (5 requests per minute)
-            await new Promise(resolve => setTimeout(resolve, 12000)); // Wait 12 seconds between requests
+            await new Promise(resolve => setTimeout(resolve, 12000));
         }
 
-        await writeCsv('se311-l10.csv', allClozes);
+        await writeCsv('clozes.csv', allClozes);
         console.log(`Total clozes generated: ${allClozes.length}`);
     } catch (error) {
         console.error(error);
