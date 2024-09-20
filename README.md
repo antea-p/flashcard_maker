@@ -1,6 +1,6 @@
 # Intro 
 
-**Flashcard maker** is a simple TypeScript application which reads a PDF file, and then uses GPT-4 to generate Anki-compatible cloze flashcards (as CSV file). Thanks to use of carefully crafted prompting rules, the clozes are placed over the most important fact in the card - at least, most of the time! Meanwhile, it ignores paragraphs discussing historical information, trivia, and similar. These 2 features - smart cloze placement, and omitting irrelevant details - distinguishes the application from existing third-party solutions.
+**Flashcard maker** is a simple TypeScript application which reads a PDF file, and then uses Claude to generate Anki-compatible cloze flashcards (as CSV file). Thanks to use of carefully crafted prompting rules, the clozes are placed over the most important fact in the card - at least, most of the time! Meanwhile, it ignores paragraphs discussing historical information, trivia, and similar. These 2 features - smart cloze placement, and omitting irrelevant details - distinguishes the application from existing third-party solutions.
 
 # Instructions
 1. Clone the project:
